@@ -1,0 +1,80 @@
+.inset-left {
+  float:left;
+  width:20%;
+  margin-right: 15px;
+}
+
+.inset-left-2 {
+  float:left;
+  width:20%;
+  margin-right: 15px;
+  clear:left;
+}
+
+.inset-right {
+  float:left;
+  width:20%;
+  margin-right: 15px;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+nav a {
+  color: white;
+  background-color:#cd5b34;
+  text-decoration:none;
+  display:inline-block;
+  padding:0.7em;
+  margin:0.2em;
+  font-size:1.3rem;
+}
+
+nav a:hover {
+  background-color: yellow;
+}
+a {
+  color:  #b32f52;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  text-align:center;
+}
+
+ol li {
+  display: inline;
+}
+
+figcaption {
+  text-align:center;
+  font-style:italic;
+  color:white;
+}
+
+.p2{
+clear:both;
+}
+
+div {
+  background-color: green;
+  border:1px solid black;
+  overflow: hidden;
+}
+
+main {
+  background-color: limegreen;
+  float: left;
+  width: 75%;
+  padding: 1rem;
+}
+
+aside {
+  background-color: orange;
+  float: left;
+  width: 25%;
+}
