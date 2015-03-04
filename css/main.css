@@ -1,19 +1,30 @@
 html{
 font-family: 'Lora', serif;
 box-sizing: border-box;
+line-height: 2rem;
 }
 .inset-left {
   float:left;
   width:40%;
   margin-right: 15px;
+  padding: 15px;
 }
-
+.inset-left-2 {
+  float:left;
+  width:40%;
+  margin-right: 15px;
+  clear:left;
+  border: 1px solid lightgrey;
+  margin:10px;
+}
 
 .inset-right {
   float:right;
   width:40%;
   margin-right: 15px;
   clear:right;
+  border: 1px solid lightgrey;
+  margin:10px;
 }
 
 .inset-topleft {
@@ -26,6 +37,20 @@ box-sizing: border-box;
   width:10%;
 }
 
+.full {
+  width:100%;
+}
+
+.half-left {
+  float: left;
+  width: 50%;
+  }
+
+.half-right {
+  float: right;
+  width: 50%;
+}
+
 *, *::before, *::after {
   box-sizing:inherit;
 }
@@ -34,6 +59,11 @@ header {
   background-color:#cd5b34;
   color:white;
   border-color:#a33f3a;
+  text-align:center;
+  position: relative;
+  text-align:center;
+  display:block;
+  padding: 2em 0 2em 0;
 }
 h1 {
   text-align:center;
@@ -41,42 +71,64 @@ h1 {
   padding: 1em;
   border-color:#a33f3a;
 }
+h2 {
+  text-align: center;
+  font-style: bold;
+  color:white;
+  background-color:#cd5b34;
+  padding:1rem;
+  margin:0;
+}
+h3 {
+  text-align:center;
+  font-style: bold;
+  padding: 15px;
+}
 nav a {
   color: white;
   background-color:#cd5b34;
   text-decoration:none;
+  text-align:center;
   display:inline-block;
-  padding:0.7em;
-  margin:0;
+  padding:0.5rem;
   font-size:1.3rem;
-  border-color:#a33f3a;
+  border:1px solid #a33f3a;
+  width:10em;
+  margin-left:0;
+  margin-right:0;
+}
+nav li {
+  float:left;
+  width:33%;
 }
 
 nav a:hover {
   background-color: #d79995;
 }
 
-ol {
+nav ol {
   list-style: none;
-  padding: 0;
   text-align:center;
-  margin:0;
+
+  width:100%;
+  display:inline-block;
 }
 
-ol li {
-  display: inline;
+figure {
+  margin:0;
 }
 
 figcaption {
   text-align:center;
   font-style:italic;
   color:white;
+  background-color:#cd5b34;
+  padding:0.5rem;
 }
 footer {
   background-color: #cd5b34;
   color: #d79995;
 }
-
-.p2{
-clear:both;
+p {
+  padding: 15px;
 }
