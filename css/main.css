@@ -37,20 +37,6 @@ line-height: 2rem;
   width:10%;
 }
 
-.full {
-  width:100%;
-}
-
-.half-left {
-  float: left;
-  width: 50%;
-  }
-
-.half-right {
-  float: right;
-  width: 50%;
-}
-
 *, *::before, *::after {
   box-sizing:inherit;
 }
@@ -59,12 +45,12 @@ header {
   background-color:#cd5b34;
   color:white;
   border-color:#a33f3a;
-  text-align:center;
   position: relative;
   text-align:center;
   display:block;
   padding: 2em 0 2em 0;
 }
+
 h1 {
   text-align:center;
   margin:0;
@@ -83,23 +69,24 @@ h3 {
   text-align:center;
   font-style: bold;
   padding: 15px;
+  font-size: 1.5rem;
 }
 nav a {
   color: white;
   background-color:#cd5b34;
   text-decoration:none;
   text-align:center;
-  display:inline-block;
+  display:block;
   padding:0.5rem;
+  margin: 0;
   font-size:1.3rem;
   border:1px solid #a33f3a;
-  width:10em;
-  margin-left:0;
-  margin-right:0;
+  width:100%;
 }
 nav li {
   float:left;
   width:33%;
+  margin:0;
 }
 
 nav a:hover {
@@ -109,25 +96,51 @@ nav a:hover {
 nav ol {
   list-style: none;
   text-align:center;
+  display:block;
 
+}
+ol {
+  padding:0;
   width:100%;
-  display:inline-block;
+
 }
 
-figure {
+.row {
+  overflow: hidden;
+}
+
+.row figure {
+  float: left;
+  width:50%;
   margin:0;
+  position: relative;
 }
 
-figcaption {
-  text-align:center;
-  font-style:italic;
-  color:white;
+.row figcaption {
+  bottom: 0;
+  left:0;
+  width:100%;
   background-color:#cd5b34;
-  padding:0.5rem;
+  color:white;
+  text-align:center;
+  padding:0;
+  font-style:italic;
+
 }
+
+.row .full {
+  width:100%;
+}
+
+body {margin:0}
+
 footer {
   background-color: #cd5b34;
   color: #d79995;
+  padding:0.5rem 1rem;
+  font-size: 0.75rem;
+  text-align:center;
+
 }
 p {
   padding: 15px;
