@@ -21,7 +21,6 @@ line-height: 2rem;
 .inset-right {
   float:right;
   width:40%;
-  margin-right: 15px;
   clear:right;
   border: 1px solid lightgrey;
   margin:10px;
@@ -59,11 +58,11 @@ h1 {
 }
 h2 {
   text-align: center;
-  font-style: bold;
   color:white;
-  background-color:#cd5b34;
+  background-color:#d98156;
   padding:1rem;
   margin:0;
+  margin-top:2rem;
 }
 h3 {
   text-align:center;
@@ -102,35 +101,52 @@ nav ol {
 ol {
   padding:0;
   width:100%;
-
 }
-
+img {
+  width:100%;
+  margin:0;
+}
 .row {
   overflow: hidden;
 }
 
-.row figure {
+figure {
   float: left;
-  width:50%;
+  width: 50%;
   margin:0;
   position: relative;
+
 }
 
 .row figcaption {
   bottom: 0;
   left:0;
   width:100%;
-  background-color:#cd5b34;
+  background-color:#d98156;
   color:white;
   text-align:center;
   padding:0;
   font-style:italic;
+  margin:0;
 
 }
 
 .row .full {
   width:100%;
 }
+.legumes {
+width: 30%;
+border: 1px solid lightgrey;
+float: left;
+clear: left;
+margin-right: 1em;
+margin-bottom:20px;
+}
+
+div p {
+  line-height:4rem;
+}
+
 
 body {margin:0}
 
@@ -140,6 +156,7 @@ footer {
   padding:0.5rem 1rem;
   font-size: 0.75rem;
   text-align:center;
+  clear:both;
 
 }
 p {
